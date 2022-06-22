@@ -1,4 +1,4 @@
-# distributor
+# 初赛第二阶段
 
 
 ## how to run?
