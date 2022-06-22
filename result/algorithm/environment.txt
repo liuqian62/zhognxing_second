@@ -1,0 +1,24 @@
+In a Linux system, cmake  VERSION >= 2.8
+
+The file directory is as follows:
+result
+├── algorithm
+│   ├── Algorithm_Desig_Documentation.txt
+│   └── environment.txt
+├── build_and_run.sh
+├── build.sh
+├── result.txt
+└── src
+    ├── CMakeLists.txt
+    ├── Drone.cpp
+    ├── Drone.h
+    ├── Generator.cpp
+    ├── Generator.h
+    ├── second_stage.cpp
+    └── utils.hpp
+
+2 directories, 12 files
+
+how to run:
+cd result
+sh build_and_run.sh
