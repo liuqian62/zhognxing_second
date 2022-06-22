@@ -81,7 +81,7 @@ def get_output_data():
        
     return ls
 if __name__ == '__main__':
-    # gauge_time('sh build_and_run.sh')
+    gauge_time('sh build_and_run.sh')
 
     ls=get_output_data()
     # plt.plot(ls[0],ls[1],"r")
@@ -108,25 +108,11 @@ if __name__ == '__main__':
         # plt.plot(e[0],e[1],"r")
         # plt.plot(e[1],e[0])
         if i%4==0:
-            max_x=max(e[0][0],e[0][-1])
-            min_x=min(e[0][0],e[0][-1])
-            max_y=max(e[1][0],e[1][-1])
-            min_y=min(e[1][0],e[1][-1])
-            x2=[]
-            y2=[]
-            for id in range(len(x1)):
-                tmp_x=x1[id]
-                tmp_y=y1[id]
-                if tmp_x>min_x and tmp_x<max_x:
-                    if tmp_y>min_y and tmp_y<max_y:
-                        x2.append(tmp_x)
-                        y2.append(tmp_y)
             plt.grid()
             plt.scatter(e[0][0], e[1][0], marker = 'o', color = 'red', s = 60, label = 'base_station')
             plt.scatter(e[0][-1], e[1][-1], marker = 'x', color = 'b', s = 60, label = 'base_station')
             # plt.scatter(x0, y0, marker = 'x', color = 'red', s = 40, label = 'base_station')
-            # plt.scatter(x1, y1, marker = 'o', color = 'green', s = 40, label = 'high_platform')
-            plt.scatter(x2, y2, marker = 'o', color = 'green', s = 40, label = 'high_platform')
+            plt.scatter(x1, y1, marker = 'o', color = 'green', s = 40, label = 'high_platform')
             plt.title('path{id}'.format(id=int(i/4)))
             plt.xlabel('x')
             plt.ylabel('y')

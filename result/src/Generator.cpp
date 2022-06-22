@@ -144,7 +144,7 @@ void Generator::generate_result()
         }        
         sol.delay = best_dely;
         sol.steps = best_steps;
-        // cout<<drone.des_mns.size()<<endl;
+        cout<<drone.des_mns.size()<<endl;
         // cout<<best_steps.size()<<endl;
         float last_time = dem.time;
         Position last_pos = position_now;        
@@ -225,7 +225,7 @@ void Generator::output()
             ofs << endl;
         }
     }
-    // ofs << "total:" << total;
+    ofs << "total:" << total;
     // cout << "total:" << total << endl;
 
     ofs.close();

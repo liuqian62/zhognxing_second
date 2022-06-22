@@ -11,6 +11,5 @@ int main()
 {
     Generator generator(Output);
     generator.do_generate();
-    generator.output_to_terminal();
     return 0;
 }
