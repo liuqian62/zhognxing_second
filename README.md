@@ -8,7 +8,8 @@ on ubuntu18.04, cd this directory,
 ```
 sh build_and_run.sh 
 ```
-
+![代码梳理](./test/代码梳理.png)
+![传输路径](./test/传输路径.png)
 ```
 .
 ├── build_and_run.sh
